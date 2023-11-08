@@ -1,5 +1,6 @@
 package com.cristianvillamil.platziwallet.ui.home.data
 
+import com.cristianvillamil.platziwallet.UserSingleton
 import com.cristianvillamil.platziwallet.ui.home.FavoriteTransfer
 import com.cristianvillamil.platziwallet.ui.home.HomeContract
 import java.util.logging.Handler
@@ -60,5 +61,7 @@ class HomeInteractor {
         }
         val handler = android.os.Handler()
         handler.postDelayed(runnable, 3000)
+
+        //UserSingleton.getInstance().userName // aquí tiene el valor asignado en HomePresenter
     }
 }
