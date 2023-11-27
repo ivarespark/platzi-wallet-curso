@@ -29,31 +29,18 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <com.mikhaellopez.circularprogressbar.CircularProgressBar
-            android:id="@+id/circularProgress"
+
+        <com.cristianvillamil.platziwallet.ui.PercentageView
+            android:id="@+id/percentageView"
             android:layout_width="wrap_content"
             android:layout_height="0dp"
             android:layout_margin="16dp"
-            app:cpb_progress_max="100"
-            app:cpb_progressbar_color="@color/translucent_white"
-            app:cpb_round_border="true"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/loans_title" />
+            app:layout_constraintTop_toBottomOf="@id/loans_title"
+            />
 
-        <TextView
-            android:id="@+id/percentageText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/montserrat_light"
-            android:text="70%"
-            android:textColor="@color/primary_text"
-            android:textSize="30sp"
-            app:layout_constraintBottom_toBottomOf="@id/circularProgress"
-            app:layout_constraintEnd_toEndOf="@id/circularProgress"
-            app:layout_constraintStart_toStartOf="@id/circularProgress"
-            app:layout_constraintTop_toTopOf="@id/circularProgress" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.Guideline

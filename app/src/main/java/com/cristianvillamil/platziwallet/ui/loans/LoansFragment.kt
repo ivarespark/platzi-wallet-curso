@@ -28,17 +28,17 @@ class LoansFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         initRecyclerView()
-        circularProgress.setProgressWithAnimation(
+        /*circularProgress.setProgressWithAnimation(
             70f,
             1000,
             AccelerateDecelerateInterpolator(),
             300
-        )
+        )*/
 
         loansViewModel = ViewModelProviders.of(this).get(LoansViewModel ::class.java)
 
         loansViewModel!!.getPercentageLiveData().observe( this, Observer {
-            percentageText.text = it
+            //percentageText.text = it
         })
 
         loansViewModel!!.getLoansListLiveData().observe(this, Observer {
