@@ -1,5 +1,7 @@
 package com.cristianvillamil.platziwallet.ui.home
 
+import androidx.lifecycle.LiveData
+
 
 // Se hace una interface como contrato para que se comuniquen todos los elementos
 interface HomeContract {
@@ -15,6 +17,7 @@ interface HomeContract {
 
     interface Presenter{
         fun retrieveFavoriteTransfers()
+        fun getPercentageLiveData() : LiveData<String>
     }
 
     interface OnResponseCallback{
